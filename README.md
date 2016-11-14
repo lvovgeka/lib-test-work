@@ -37,14 +37,14 @@ Rus:
 
 
 1) Спроектируйте блоки API со стороны каждой библиотеки, как она будет сообщать какие книги были взяты и какими читателями
-  - вот метод: 
+  - метод: 
      libs.%суда город подставляем%.getStatisticsBooksOnHand пример:  libs.moskva.getStatisticsBooksOnHand 
 
 
 
 2) Спроектируйте блоки API со стороны централизированного хранилища, которые будут:
-  -  а) получать данные от библиотек о том, какие читатели каакие книги брали и сдавали и когда : centralizedRepository.getStatisticsBooksOnHand 
-  -  б) выдавать данные о читателях, сколько у него книг на руках и генерировать произвольные отчеты по имени : centralizedRepository.getStatisticsBooksOnHandForCustomerName
+  -  а) получать данные от библиотек о том, какие читатели каакие книги брали и сдавали и когда - метод: centralizedRepository.getStatisticsBooksOnHand 
+  -  б) выдавать данные о читателях, сколько у него книг на руках и генерировать произвольные отчеты по имени - метод: centralizedRepository.getStatisticsBooksOnHandForCustomerName
 
 Все методы с параметрами можно посмотреть в rpc-methods.jpg
   
