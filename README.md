@@ -31,9 +31,14 @@ This package was made for fonemica.ru in order to pass the test task and result 
 6) If wont see all rpc method run command:  php bin/console debug:rpc:methods
 
 Rus:
+
+
 1) Спроектируйте блоки API со стороны каждой библиотеки, как она будет сообщать какие книги были взяты и какими читателями
   - вот метод: 
      libs.%суда город подставляем%.getStatisticsBooksOnHand пример:  libs.moskva.getStatisticsBooksOnHand 
+
+
+
 2) Спроектируйте блоки API со стороны централизированного хранилища, которые будут:
   -  а) получать данные от библиотек о том, какие читатели каакие книги брали и сдавали и когда : centralizedRepository.getStatisticsBooksOnHand 
   -  б) выдавать данные о читателях, сколько у него книг на руках и генерировать произвольные отчеты по имени : centralizedRepository.getStatisticsBooksOnHandForCustomerName
