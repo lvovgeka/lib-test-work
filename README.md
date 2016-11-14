@@ -6,14 +6,15 @@ This package was made for fonemica.ru in order to pass the test task and result 
   - new Lv\RpcBundle\RpcBundle(),
   - new Lv\LibraryBundle\LvLibraryBundle()
 
-3) Setting Rpc server
-    1) Add to your AppKernel string "new Lv\RpcBundle\RpcBundle()"
-    2) Add to your routing.yml 
+3) Setting Rpc server (jsonrpc 2.0)
+
+    
+    1) Add to your routing.yml 
         rpc:
             resource: "@Lv/RpcBundle/Controller/"
             type:     annotation
-            prefix:   /
-    3) Add to your config.yml
+            prefix:   /       
+    2) Add to your config.yml
         rpc: 
             mapping:
                 - "@YourBundle/Method" 
@@ -24,7 +25,9 @@ This package was made for fonemica.ru in order to pass the test task and result 
             mapping: ~
             cache:
                  driver: file
-                 kk                 
+                 kk             
+                     
+                     
 4) Update DB :  php bin/console doctrine:schema:update -f
 6) Add to you parameters 'lib_api_url' parameter, example: http://api-lib.you-site.com
 5) Seeding data to db php bin/console doctrine:fixtures:load
