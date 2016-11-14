@@ -1,0 +1,1 @@
+This package was made for fonemica.ru in order to pass the test task and result of the assessment of this package to start working with fonemica.ru.

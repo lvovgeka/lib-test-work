@@ -1,0 +1,4 @@
+lv_library_homepage:
+    type:     annotation
+    path:     /
+    #defaults: { _controller: LvLibraryBundle:Default:index }
